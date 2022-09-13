@@ -1,0 +1,484 @@
+body {
+    margin: 0;
+    font-family: 'Grechen Fuemen', cursive;
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #141417;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 40px 0;
+
+    border: 0;
+    background-color: #e5e5e5;
+}
+
+
+/* Page */
+.page {
+    overflow: hidden;
+}
+
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1340px;
+    padding: 0 0px;
+    margin: 0 auto;
+}
+
+/* Intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 820px;
+    position: relative;
+
+    background: url("../images/page 1.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.intro__title_1 {
+    position: absolute;
+    width: 579px;
+    height: 126px;
+    left: 140px;
+    top: 280px;
+
+    font-family: 'Grechen Fuemen', cursive;
+    font-weight: 400;
+    font-size: 140px;
+    line-height: 90%;
+
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.intro__title_2 {
+    position: absolute;
+    width: 559px;
+    height: 126px;
+    left: 290px;
+    top: 444px;
+
+    font-family: 'Grechen Fuemen', cursive;
+    font-weight: 400;
+    font-size: 140px;
+    line-height: 90%;
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+
+
+.intro__suptitle {
+    position: absolute;
+    width: 660px;
+    height: 23px;
+    left: 300px;
+    top: 607px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125%;
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header.fixed {
+    padding: 10px 0;
+
+    background-color: #eb8b8d;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transform: translate3d(0, 0, 0);
+}
+
+.header.active {
+    background-color: #eb8b8d;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 69px;
+    height: 30px;
+    left: 79px;
+    top: 51px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+
+
+    font-variant: small-caps;
+
+    color: #FFFFFF;
+}
+
+
+/* Nav */
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .1s linear;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+
+    color: #ECECEC;
+}
+
+
+/* Page 2 */
+.page2 img {
+    position: absolute;
+    object-fit: contain;
+    left: 0;
+    top: 1100px;
+}
+
+
+.page2__title {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+
+    margin-bottom: 60px;
+
+    padding-top: 100px;
+
+    font-family: 'Grechen Fuemen', cursive;
+}
+
+
+.page2__description {
+  position: relative;
+  z-index: 1;
+}
+
+
+.page2__suptitle {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 700px;
+
+    font-size: 16px;
+    color: #fff;
+
+    width: 43%;
+}
+
+
+/* Page 3 */
+.page3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 1340px;
+    position: relative;
+
+    margin-top: 200px;
+
+
+    background: url("../images/page 3.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.page3__title {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+
+    margin-bottom: 80px;
+    margin-top: 60px;
+
+
+    font-family: 'Grechen Fuemen', cursive;
+}
+
+.page3__suptitle {
+
+    font-size: 16px;
+    color: #ECECEC;
+
+    width: 43%;
+}
+
+.page3__paragraph {
+    width: 1240px;
+    margin-left: 700px;
+    margin-top: -80px;
+}
+
+/* Page 4 */
+.page4 img {
+    position: absolute;
+    object-fit: contain;
+}
+
+.page4__description {
+  position: relative;
+  z-index: 1;
+}
+
+
+.page4__suptitle {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 130px;
+
+    font-size: 25px;
+    color: #D63530;
+
+    width: 75%;
+}
+
+
+/* Page 5 */
+.page5 img {
+    position: absolute;
+    object-fit: contain;
+    right: -40px;
+    top: 120px;
+    width: 666px;
+
+}
+
+
+.page5__title {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+
+    margin-bottom: 60px;
+
+    padding-top: 100px;
+
+    font-family: 'Grechen Fuemen', cursive;
+}
+
+
+.page5 {
+  position: relative;
+  z-index: 1;
+}
+
+
+.page5__suptitle {
+    margin-top: 40px;
+    margin-bottom: 15px;
+
+    font-size: 16px;
+    color: #fff;
+
+    width: 43%;
+}
+
+
+/* Page 6 */
+.page6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 1340px;
+    position: relative;
+
+
+
+    background: url("../images/page 6.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.page6__title {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+
+    margin-bottom: 80px;
+    margin-left: 700px;
+    margin-top: 140px;
+
+
+    font-family: 'Grechen Fuemen', cursive;
+}
+
+.page6__suptitle {
+
+    font-size: 16px;
+    color: #ECECEC;
+
+    width: 43%;
+}
+
+.page6__paragraph {
+    width: 1300px;
+    margin-left: 700px;
+}
+
+
+/* Page 7 */
+.page7 {
+    position: relative;
+}
+
+.img__samurai {
+    position: absolute;
+    object-fit: contain;
+    width: 700px;
+    top: 200px;
+}
+
+
+.page7__title {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+
+    margin-bottom: 60px;
+    margin-left: 550px;
+
+    padding-top: 100px;
+
+    font-family: 'Grechen Fuemen', cursive;
+}
+
+
+.page7__suptitle {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 700px;
+
+    font-size: 16px;
+    color: #fff;
+
+    width: 43%;
+}
+
+/* Page 7 */
+.page7-2 {
+    position: relative;
+
+    padding-top: 350px;
+}
+
+.img__kunoichi {
+    position: absolute;
+    object-fit: contain;
+    width: 570px;
+    left: 700px;
+    top: 50px;
+}
+
+
+.page7-2__suptitle {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+
+    font-size: 16px;
+    color: #fff;
+
+    width: 43%;
+}
+
+
+.footer {
+    margin-top: 100px;
+    margin-bottom: 40px;
+
+    text-align: center;
+
+    font-size: 14px;
+    color: #ECECEC;
+}
